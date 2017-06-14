@@ -21,6 +21,16 @@ html {
 	font-weight: bold;
 }
 
+#header h2,#header button {
+	flex: 1;
+	text-align: center;
+}
+
+#header button {
+	font-size: 16px;
+	color: #eee;
+}
+
 #footer {
 	position: absolute;
 	z-index: 2;

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>resume</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="loading">loading</div>
+    <div class="show swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper1">
+                <div id="music">
+                    <img class="music_disc music_play" src="images/music_disc.png">
+                    <img class="music_pointer" src="images/music_pointer.png">
+                </div>
+                <div class="header ani" swiper-animate-effect="bounce" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                    
+                </div>
+                <div class="head ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">
+                    <img src="images/head.jpg" alt="头像">
+                </div>
+            </div>
+            <div class="swiper-slide swiper2">
+                <div class="info_header ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">
+                    <h2>个人信息</h2>
+                    <div class="hr"></div>
+                    <p>Personal information</p>
+                </div>
+                <div class="info_body">
+                    <p class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s">姓名：金晓东</p>
+                    <p class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.9s">年龄：29</p>
+                    <p class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="1.0s">学历：硕士</p>
+                    <p class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="1.1s">毕业院校：华南理工大学</p>
+                    <p class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="1.2s">相关工作经验：2年</p>
+                    <p class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="1.3s">求职意向：前端开发工程师</p>
+                </div>
+                <div class="info_footer ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="1.4s">
+                    <img src="images/book.png" alt="书">
+                </div>
+            </div>
+            <div class="swiper-slide swiper3">
+                <div class="tech_header">
+                    <h2>部分专业技术</h2>
+                    <div class="hr"></div>
+                    <p>professional skill</p>
+                </div>
+                <div class="tech_body">
+                    <img src="images/CSS.png" alt="css" class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                    <img src="images/bootstrap.png" alt="bootstrap" class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                    <img src="images/Git.png" alt="git" class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                    <img src="images/nodejs.png" alt="nodejs" class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                    <img src="images/JS.png" alt="js" class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                    <img src="images/ps.png" alt="ps" class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                    <img src="images/mySql.png" alt="mysql" class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                </div>
+                <button id="enter">welcome</button> 
+            </div>
+        </div>
+        <audio autoplay="true">
+            <source src="resources/happynewyear.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div id="mainContainer">
+         <div id="header">
+            <h2>技能</h2>
+        </div>
+
+        <div id="wrapper">
+            <div id="scroller">
+                <ul></ul>
+            </div>
+        </div>
+
+        <div id="footer">
+            <ul class="resume">
+                <li class="active" id="skill">技能<i class="iconfont icon-skill"></i></li>
+                <li id="project">项目<i class="iconfont icon-project"></i></li>
+                <li id="work">经历<i class="iconfont icon-work"></i></li>
+                <li id="me">我<i class="iconfont icon-me"></i></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

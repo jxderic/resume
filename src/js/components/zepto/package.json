@@ -1,0 +1,17 @@
+{
+  "name": "zepto-modules",
+  "version": "1.0.1",
+  "description": "Zepto in CommonJS modules",
+  "repository": "tomek-f/zepto-modules",
+  "keywords": [
+    "zepto",
+    "CommonJS"
+  ],
+  "main": "_default.js",
+  "author": "Tomek Fijoł",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "files": [
+    "*.js"
+  ]
+}

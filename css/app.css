@@ -1,0 +1,142 @@
+.mui-bar-nav .button {
+	display: inline-block;
+	width: 10vw;
+}
+
+.mui-bar-nav .camera img{
+	width: 8vw;
+}
+.mui-bar-nav .camera {
+	position: absolute;
+	left: 22px;
+	top: 7px;
+}
+
+.mui-bar-nav .map img {
+	width: 6vw;
+}
+
+.mui-bar-nav .map {
+	position: absolute;
+	right: 20px;
+	top: 10px;
+}
+
+#tabbar .skill {
+    display: flex;
+    flex-direction: row;
+}
+
+#tabbar .icon {
+    width: 59px;
+    height: 59px;
+}
+
+#tabbar .content {
+    flex: 1;
+    padding-left: 5px;
+}
+
+#tabbar .content .name {
+	width: 80vw;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+#tabbar .icon img {
+    width: 59px;
+    height: 59px;
+}
+
+#tabbar i {
+    color: #333;
+}
+
+#tabbar span {
+	font-size: 14px;
+	color: #8f8f94;
+}
+
+#tabbar-with-project .title{
+	height: 18vw;
+	display: flex;
+	align-items: center;
+	padding: 0 5vw;
+}
+
+#tabbar-with-project h2,#tabbar-with-experience h2 {
+	flex: 1;
+	font-size: 16px;
+}
+
+#tabbar-with-project .title p {
+	flex: 1;
+	font-size: 16px;
+	text-align: right;
+	color: #a5a7aa;
+}
+
+#tabbar-with-project img {
+	width: 100%;
+}
+
+/*tabbar-with-project*/
+#tabbar-with-project .project_header {
+	display: flex;
+	align-items: center;
+}
+
+#tabbar-with-project .project_header h2,#tabbar-with-project .project_header p {
+	flex: 1;
+	margin: 0;
+	text-align: left;
+}
+/*tabbar-with-project*/
+#tabbar-with-project .project_header p,#tabbar-with-experience,.experience_header {
+	text-align: right;
+}
+#tabbar-with-experience .experience_body {
+	display: flex;
+	padding-left: 1vw;
+}
+
+#tabbar-with-experience .experience_body span {
+	flex: 1;
+}
+/*tabbar-with-me*/ 
+#tabbar-with-me .mui-card-header {
+	display: flex;
+	align-items: center;
+}
+#tabbar-with-me .mui-card-header h2 {
+	font-size: 16px;
+	flex: 1;
+	margin: 0;
+	text-align: left;
+}
+#tabbar-with-me .mui-card-header p {
+	flex: 1;
+	margin: 0;
+}
+#tabbar-with-me .mui-card-content {
+	display: flex;
+	padding-left: 3vw;
+}
+#tabbar-with-me .head {
+	padding-top: 6vw;
+}
+#tabbar-with-me .info {
+	padding-left: 10vw;
+}
+
+#tabbar-with-me .mui-card-footer {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+#tabbar-with-me .edu {
+	display: flex;
+}
+

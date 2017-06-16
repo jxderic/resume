@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>resume</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="./css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/app.css"/>
+		
+		<style>
+			
+			.title{
+				margin: 20px 15px 10px;
+				color: #6d6d72;
+				font-size: 15px;
+			}
+			
+			.oa-contact-cell.mui-table .mui-table-cell {
+				padding: 11px 0;
+				vertical-align: middle;
+			}
+			
+			.oa-contact-cell {
+				position: relative;
+				margin: -11px 0;
+			}
+	
+			.oa-contact-avatar {
+				width: 75px;
+			}
+			.oa-contact-avatar img {
+				border-radius: 50%;
+			}
+			.oa-contact-content {
+				width: 100%;
+			}
+			.oa-contact-name {
+				margin-right: 20px;
+			}
+			.oa-contact-name, oa-contact-position {
+				float: left;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<div class="button camera" onclick="clicked('./plus/barcode_scan.html',true,true)"><img src="images/camera.png"/></div>
+			<h1 class="mui-title">技能</h1>
+			<div class="button map" onclick="showMaps();"><img src="images/map.png"/></div>
+		</header>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" href="#tabbar">
+				<span class="mui-icon iconfont icon-skill"></span>
+				<span class="mui-tab-label">技能</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-project">
+				<span class="mui-icon iconfont icon-project"></span>
+				<span class="mui-tab-label">项目</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-experience">
+				<span class="mui-icon iconfont icon-experience"></span>
+				<span class="mui-tab-label">经历</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-me">
+				<span class="mui-icon iconfont icon-me"></span>
+				<span class="mui-tab-label">我</span>
+			</a>
+		</nav>
+		<div class="mui-content">
+			<div id="tabbar" class="mui-control-content mui-active">
+				<ul class="mui-table-view mui-table-view-chevron">
+					<li class="mui-table-view-cell skill">
+						<div class="icon">
+							<img src="images/html5.png" alt="html5">
+						</div><div class="content">
+							<p class="category">规范</p>
+							<p class="name">HTML4、HTML5、ES5、ES6、CommonJS、CMD、AMD等</p>
+							<div class="level">
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<i class="iconfont icon-star"></i>
+								<i class="iconfont icon-star"></i>
+								<span>了解</span>
+							</div>
+					</li>
+					<li class="mui-table-view-cell skill">
+						<div class="icon">
+							<img src="images/react.png" alt="react">
+						</div><div class="content">
+							<p class="category">框架</p>
+							<p class="name">Jquery、Zepto、AngularJs、Recat、Avalon等</p>
+							<div class="level">
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<i class="iconfont icon-star"></i>
+								<span>熟悉</span>
+							</div>
+					</li>
+					<li class="mui-table-view-cell skill">
+						<div class="icon">
+							<img src="images/ionic.png" alt="ionic">
+						</div><div class="content">
+							<p class="category">框架</p>
+							<p class="name">Mui、Yo、Ionic等</p>
+							<div class="level">
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<i class="iconfont icon-star"></i>
+								<span>熟悉</span>
+							</div>
+					</li>
+					<li class="mui-table-view-cell skill">
+						<div class="icon">
+							<img src="images/Swiper.png" alt="swiper">
+						</div><div class="content">
+							<p class="category">类库</p>
+							<p class="name">Swiper、Iscroll等</p>
+							<div class="level">
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<i class="iconfont icon-star"></i>
+								<span>熟悉</span>
+							</div>
+					</li>
+					<li class="mui-table-view-cell skill">
+						<div class="icon">
+							<img src="images/plugin.png" alt="plugin">
+						</div><div class="content">
+							<p class="category">插件</p>
+							<p class="name">Jquery menu plugin、Jquery nav plugin、zepto emoji-expression-plugin等</p>
+							<div class="level">
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<i class="iconfont icon-star"></i>
+								<span>熟悉</span>
+							</div>
+					</li>
+					<li class="mui-table-view-cell skill">
+						<div class="icon">
+							<img src="images/responsive.png" alt="responsive">
+						</div><div class="content">
+							<p class="category">布局</p>
+							<p class="name">Fixed、Fulid、Flex、Responsive</p>
+							<div class="level">
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<span>精通</span>
+							</div>
+					</li>
+					<li class="mui-table-view-cell skill">
+						<div class="icon">
+							<img src="images/javascript.png" alt="javascript">
+						</div><div class="content">
+							<p class="category">程序</p>
+							<p class="name">Javascript原生、Jquery及Zepto插件、AngularJs等</p>
+							<div class="level">
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<i class="iconfont icon-unie61a" style="color: orange;"></i>
+								<span>精通</span>
+							</div>
+					</li>
+				</ul>
+			</div>
+			<div id="tabbar-with-project" class="mui-control-content">
+				<div class="mui-content">
+					<div class="mui-card">
+						<div class="mui-card-header project_header">
+							<h2>和瑞控股</h2>
+							<p>企业网站</p>	
+						</div>
+						<div class="mui-card-content" >
+							<img src="images/work-yanshuo.jpg" alt="" width="100%" class="mui-card-media"/>
+							<div class="mui-card-content-inner">
+								<p>简介：和瑞控股公司的官方网站，详细介绍了和瑞控股公司的主要情况</p>
+								<p>详情：项目耗时3周，主要处理前端页面及程序嵌套，当时并未要求移动端适配，故该网站只适应于PC端应用</p>
+							</div>
+						</div>
+						<div class="mui-card-footer">
+							<a class="mui-card-link">
+								<img src="images/bootstrap.png" style="width: 8vw;"/>
+								<img src="images/jquery.png" style="width: 8vw;"/>
+							</a>
+							<a class="mui-card-link" href="http://www.horays.com/">Read more</a>
+						</div>
+					</div>
+					<div class="mui-card">
+						<div class="mui-card-header project_header">
+							<h2>珍诚医药</h2>
+							<p>平台门户</p>	
+						</div>
+						<div class="mui-card-content" >
+							<img src="images/work-yanshuo.jpg" alt="" width="100%" class="mui-card-media"/>
+							<div class="mui-card-content-inner">
+								<p>简介：医药电商先锋平台，国内医药电商B2B第一平台，年销售额超25亿</p>
+								<p>详情：长期维护，功能迭代，包括平台整体UI改进以及功能模块的增加与性能的优化</p>
+							</div>
+						</div>
+						<div class="mui-card-footer">
+							<a class="mui-card-link">
+								<img src="images/react.png" style="width: 8vw;"/>
+								<img src="images/jquery.png" style="width: 8vw;"/>
+							</a>
+							<a class="mui-card-link" href="http://www.horays.com/">Read more</a>
+						</div>
+					</div>
+					<div class="mui-card">
+						<div class="mui-card-header project_header">
+							<h2>政教通</h2>
+							<p>移动平台</p>	
+						</div>
+						<div class="mui-card-content" >
+							<img src="images/work-yanshuo.jpg" alt="" width="100%" class="mui-card-media"/>
+							<div class="mui-card-content-inner">
+								<p>简介：儿童健康成长护航者</p>
+								<p>详情：项目初建耗时3月，主要包括数据支撑平台的建设、移动端Hybrid模式的应用及开发</p>
+							</div>
+						</div>
+						<div class="mui-card-footer">
+							<a class="mui-card-link">
+								<img src="images/Swiper.png" style="width: 8vw;"/>
+								<img src="images/nodejs.png" style="width: 10vw;"/>
+							</a>
+							<a class="mui-card-link" href="http://www.horays.com/">Read more</a>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div id="tabbar-with-experience" class="mui-control-content">
+				<div class="mui-content">
+					<div class="mui-card">
+						<div class="mui-card-header experience_header">
+							<img src="images/gr.png" alt="" width="100%" class="mui-card-media"/>
+							<h2>浙江贵仁信息科技股份有限公司</h2>	
+						</div>
+						<div class="mui-card-content" >
+							<img src="images/grpro.png" alt="" width="100%" class="mui-card-media"/>
+							<div class="mui-card-content-inner experience_body">
+								<span>职位：前端开发工程师</span>
+								<span>时间：2015年-至今</span>
+							</div>
+						</div>
+						<div class="mui-card-footer">
+							<a class="mui-card-link" href="http://www.keepsoft.net/">点击进入官网</a>
+						</div>
+					</div>
+					<div class="mui-card">
+						<div class="mui-card-header experience_header">
+							<img src="images/scut.png" alt="" width="100%" class="mui-card-media"/>
+							<h2>华南理工大学</h2>	
+						</div>
+						<div class="mui-card-content" >
+							<img src="images/shool1.png" alt="" width="100%" class="mui-card-media"/>
+							<div class="mui-card-content-inner experience_body">
+								<span>学院：土木与交通学院</span>
+								<span>时间：2011年-2014年</span>
+							</div>
+						</div>
+						<div class="mui-card-footer">
+							<a class="mui-card-link" href="http://www.scut.edu.cn/">点击进入官网</a>
+						</div>
+					</div>
+					<div class="mui-card">
+						<div class="mui-card-header experience_header">
+							<img src="images/qust.png" alt="" width="100%" class="mui-card-media"/>
+							<h2>青岛科技大学</h2>	
+						</div>
+						<div class="mui-card-content" >
+							<img src="images/shool2.png" alt="" width="100%" class="mui-card-media"/>
+							<div class="mui-card-content-inner experience_body">
+								<span>学院：机械与工程学院</span>
+								<span>时间：2007年-2011年</span>
+							</div>
+						</div>
+						<div class="mui-card-footer">
+							<a class="mui-card-link" href="http://www.qust.edu.cn/">点击进入官网</a>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div id="tabbar-with-me" class="mui-control-content">
+				<div class="mui-content">
+					<div class="mui-card">
+						<div class="mui-card-header">
+							<h2>个人信息</h2>
+							<p>Personal information</p>
+						</div>
+						<div class="mui-card-content" >
+							<div class="head">
+								<img src="images/eric.jpg" alt="head" width="80vw" class="mui-card-media"/>
+							</div>
+							<div class="mui-card-content-inner info">
+								<p class="name">姓名：金晓东</p>
+								<p class="sex">性别：男</p>
+								<p class="home">家乡：浙江衢州</p>
+								<p class="age">年龄：29</p>
+							</div>
+						</div>
+						<div class="mui-card-footer">
+							<div class="edu">
+								<div class="edu_left">
+									<p class="education">学历：硕士</p>
+									<p class="shool">学校：华南理工大学</p>
+								</div>
+								<div class="edu_right">
+									<p class="graduate">毕业时间：2014年7月</p>
+									<p class="major">专业：船舶与海洋工程</p>
+								</div>
+							</div>
+							<div class="work">
+								<p class="intension">求职意向：前端开发工程师或JavaScript工程师</p>
+								<p class="work_exp">相关工作经验：2年</p>
+							</div>
+						</div>
+					</div>
+					<div class="mui-card">
+						<div class="mui-card-header">
+							<h2>个人评价</h2>
+							<p>About me</p>
+						</div>
+						<div class="mui-card-content">
+							<p>自我评价：喜欢前端，喜欢学习新技术，我有点老，但我不是老油条,一生想做浪漫极客</p>
+						</div>
+					</div>
+					<div class="mui-card">
+						<div class="mui-card-header">
+							<h2>技术探索</h2>
+							<p>Tech exploration</p>
+						</div>
+						<div class="mui-card-content">
+							<p class="study1">Github Pages 和Jekyll 搭建个人博客</p>	
+						</div>
+					</div>
+					<div class="mui-card">
+						<div class="mui-card-header">
+							<h2>联系方式</h2>
+							<p>Contact information</p>
+						</div>
+						<div class="mui-card-content" >
+							<div class="code">
+								<img src="images/eric_code.jpg" width="100vw"/>
+							</div>
+							<div class="contact">
+								<p class="phone">电话：13165957571</p>
+								<p class="QQ">QQ：594149715</p>
+								<p class="email">邮箱：eric4336355@126.com</p>
+								<p class="place">地址：浙江省江山市四都镇北街</p>
+							</div>	
+						</div>
+						<div class="mui-card-footer">
+							<p>个人博客：<a href="http://blog.jxderic.xyz/">http://blog.jxderic.xyz/</a></p>
+							<p>Github地址：<a href="https://github.com/jxderic">https://github.com/jxderic</a></p>
+							<p>个人简历地址：<a href="https://yanshuo.io"></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="./js/mui.min.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+	<script type="text/javascript" src="./js/immersed.js" ></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+		
+		function showMaps(){
+			if('Android'===plus.os.name&&navigator.userAgent.indexOf('StreamApp')>0){
+				plus.nativeUI.toast('当前环境暂不支持地图插件');
+				return;
+			}
+			var ws=plus.webview.currentWebview();
+			var wm=plus.webview.getWebviewById(plus.runtime.appid);
+			wm&&wm.evalJS("preateClear()");
+			clicked('./plus/maps_map.html',false,true);
+		}
+		
+		var oTitle = document.getElementsByClassName('mui-title')[0];
+		mui('.mui-bar-tab').on('tap', '.mui-tab-item', function() {
+				var headText = this.getElementsByClassName('mui-tab-label')[0].innerHTML;
+				oTitle.innerHTML = headText;
+		})
+	</script>
+</html>
